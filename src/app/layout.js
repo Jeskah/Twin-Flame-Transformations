@@ -1,6 +1,7 @@
 import "./globals.css";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
+import Footer from "@/components/Footer";
 
 
 export default function RootLayout({ children }) {
@@ -11,7 +12,7 @@ export default function RootLayout({ children }) {
         <div>
         {children}
         </div>
-        
+        <Footer/>
       </body>
     </html>
   );
