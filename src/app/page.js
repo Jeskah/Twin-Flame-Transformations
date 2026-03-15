@@ -10,14 +10,14 @@ export default function Home() {
     <div className="flex flex-col p-10 items-center flex-wrap justify-center text-center gap-10 mt-10">
 
         <h1 className="text-mauve-700">twin flame transformations</h1>
-        <h4 className="w-150">A sacred container for radical change and integrative healing</h4>
+        <h5 className="w-150">A sacred container for radical change and integrative healing</h5>
 
-<div className="flex relative w-full  items-center justify-center">
+<div className="flex relative w-full items-center justify-center">
       <Image
         src={Connie}
         alt="coach picture"
         className="object-cover rounded-t-4xl"
-        width={800}
+        width={600}
       />
 
       <Image 
@@ -25,7 +25,7 @@ export default function Home() {
         alt="bear kemode"
         width={200}
         height={200}
-        className="object-cover top-90 left-20 w-50 h-50 rounded-full absolute"
+        className="object-cover top-60 left-40 w-50 h-50 rounded-full absolute"
       />
 </div>
 
