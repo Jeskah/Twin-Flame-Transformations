@@ -3,18 +3,21 @@ import Connie from "../../public/assets/connie.webp"
 import LogoDark from "../../public/ttf-dark.png"
 
 
+
 export default function Home() {
+
   return (
     <div className="flex flex-col p-10 items-center flex-wrap justify-center text-center gap-10 mt-10">
 
         <h1 className="text-mauve-700">twin flame transformations</h1>
         <h4 className="w-150">A sacred container for radical change and integrative healing</h4>
 
-<div className="relative w-full justify-center">
+<div className="flex relative w-full  items-center justify-center">
       <Image
         src={Connie}
         alt="coach picture"
         className="object-cover rounded-t-4xl"
+        width={800}
       />
 
       <Image 
@@ -22,7 +25,7 @@ export default function Home() {
         alt="bear kemode"
         width={200}
         height={200}
-        className="object-cover bottom-0 rounded-t-2xl absolute"
+        className="object-cover top-90 left-20 w-50 h-50 rounded-full absolute"
       />
 </div>
 
@@ -53,7 +56,7 @@ className="m-4"
             />
 
       <div className="relative text-mauve-500">
-        <h3 className="mt-100">At the heart of my work</h3>
+        <h3 className="mt-100 font-Dawning_of_a_New_Day">At the heart of my work</h3>
       </div>
           </div>
 
@@ -61,7 +64,9 @@ className="m-4"
           I support Twin Flames to a place of balance, restored health in mind body and soul, and ultimately to inner union and beyond. I help you to integrate fragmented parts of self, heal core wounds, and return to inner alignment, sovereignty, and embodied authenticity.
         </p>
 
-  <h4 className="text-mauve-600">This is a grounded, supportive space for people ready to dive into their healing, face their pain, alchemise their wounds, and step into clarity and self-leadership.</h4>
+<div className="bg-mauve-600 p-10">
+  <h5 className="text-[#d7ccd5] w-190">This is a grounded, supportive space for people ready to dive into their healing, face their pain, alchemise their wounds, and step into clarity and self-leadership.</h5>
+</div>
 
 
             <div className="flex flex-col w-full">

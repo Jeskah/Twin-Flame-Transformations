@@ -12,6 +12,7 @@
   }
 } */
 
+
 @layer components {
   .typography {
     color: var(--color-gray-950);
