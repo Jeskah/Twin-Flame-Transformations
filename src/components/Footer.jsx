@@ -1,8 +1,8 @@
 export default function Footer () {
     return (
-        <div className="flex flex-col gap-5 flex-wrap w-full h-60p-5 p-9 justify-evenly bg-mauve-800 ">
+        <div className="flex flex-col flex-wrap max-w-[100vh] h-60p-5 p-9 justify-evenly bg-mauve-800 ">
 
-            <div className="flex flex-col items-left gap-1 text-mauve-400">
+            <div className="flex flex-col items-left gap-1 text-mauve-400 w-full">
             <h6>Contact:</h6>
             <p> you@tf-transormation.com</p>
             <h6>SOCIAL</h6>
