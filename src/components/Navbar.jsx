@@ -2,7 +2,7 @@
 
     export default function Navbar() {
     return (
-    <div className="flex flex-col bg-mauve-600 uppercase font-light text-gray-100 p-5 items-center">
+    <div className="flex flex-col bg-white/7 uppercase font-light text-gray-100 p-5 items-center z-1 min-w-screen fixed">
 
     <nav className="flex flex-col items-center gap-4 text-xs p-1">
 
@@ -15,7 +15,6 @@
         </div>
 
     </nav>
-
-    </div>
+</div>
     )
     }
