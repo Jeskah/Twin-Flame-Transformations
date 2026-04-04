@@ -1,14 +1,9 @@
 import Link from "next/link";
 import PackageCard from "@/components/PackageCard";
+import { getPackages } from "@/lib/db/packages";
 
 export default async function PackagesPage() {
-const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/packages`);
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch packages");
-  }
-
-  const packages = await res.json();
+  const packages = await getPackages();
 
   console.log(packages);
 
