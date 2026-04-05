@@ -16,10 +16,11 @@ export default async function PackagesPage() {
 Unsure which option is right for you or would like more information? Please visit <Link href="/work-with-me" className="underline text-pink-500">Work With Me</Link> where you can read full descriptions of each service.
 Clicking on the titles below will take you to more detailed information</p>
 
+<h5>Available bookings:</h5>
+
 </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10 justify-items-center ">
-        <h5>Available bookings:</h5>
       {packages.map((pkg) => (
         <Link key={pkg.id} href={`/packages/${pkg.id}`}>
           <PackageCard

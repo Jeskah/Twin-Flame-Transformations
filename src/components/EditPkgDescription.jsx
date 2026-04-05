@@ -27,7 +27,7 @@ if (!editing) {
     <div>
         <p className="text-white">{description}</p>
         <button
-        className="mt-2 px-3 py-1 bg-white text-black rounded"
+        className="p-1 mt-10 bg-white text-black text-xs"
         onClick={() => setEditing(true)}
         >
         Edit Description
