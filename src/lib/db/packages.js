@@ -3,7 +3,21 @@ import { supabase } from "../supabase";
 export async function getPackageById(id) {
 const { data, error } = await supabase
     .from("packages")
-    .select("*")
+    .select(`
+        id,
+        name,
+        description,
+        img_url,
+        package_options (
+            id,
+            title,
+            option_variants (
+                id,
+                duration,
+                price
+                )
+            )
+        `)
     .eq("id", id)
     .single();
 

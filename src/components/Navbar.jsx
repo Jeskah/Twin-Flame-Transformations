@@ -2,11 +2,11 @@
 
     export default function Navbar() {
     return (
-    <div className="flex flex-col bg-white/7 uppercase font-light text-gray-100 p-5 items-center z-1 min-w-screen fixed">
+    <div className="flex flex-col bg-white/7 uppercase font-light text-gray-100 p-5 items-center z-1 min-w-screen mb-10">
 
-    <nav className="flex flex-col items-center gap-4 text-xs p-1">
+    <nav className="flex flex-col items-center gap-4 text-xs p-1 fixed">
 
-        <div className="flex gap-10">
+        <div className="flex gap-6">
         <Link href="/">HOME</Link>
         <Link href="/about-me">About</Link>
         <Link href="/work-with-me">Work With Me</Link>
