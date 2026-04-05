@@ -15,7 +15,6 @@ export default async function PackageDetailPage({ params }) {
   return (
     
     <div className="relative p-10 bg-black/90 min-h-screen">
-      <div>
       <PackageHero title={pkg.name} img_url={pkg.img_url}>
     {isAdmin ? (
       <EditPkgDescription
@@ -26,7 +25,6 @@ export default async function PackageDetailPage({ params }) {
       <p className="text-white">{pkg.description}</p>
     )}
   </PackageHero>
-  </div>
 
 
       <div className="p-7 grid gap-10 justify-center">
