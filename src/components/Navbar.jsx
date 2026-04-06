@@ -2,18 +2,13 @@
 
     export default function Navbar() {
     return (
-    <div className="flex flex-col bg-black/50 uppercase font-light text-gray-100 items-center z-1 min-w-screen fixed">
-
-    <nav className="flex abolute justify-center flex-col items-center text-xs">
-
-        <div className="flex gap-12 p-10">
+<div className="w-full px-20 bg-black/50 uppercase font-light text-gray-100 z-10 relative">
+    <nav className="flex justify-center text-[8px] p-4 gap-6.25">
         <Link href="/">HOME</Link>
-        <Link href="/about-me">About</Link>
-        <Link href="/work-with-me">Work With Me</Link>
-        <Link href="/packages">Packages</Link>
-        <Link href="/bookings">Bookings</Link>
-        </div>
-
+        <Link href="/about-me">ABOUT</Link>
+        <Link href="/work-with-me">WORK WITH ME</Link>
+        <Link href="/packages">PACKAGES</Link>
+        <Link href="/bookings">BOOKINGS</Link>
     </nav>
 </div>
     )

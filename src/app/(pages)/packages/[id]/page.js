@@ -14,26 +14,31 @@ export default async function PackageDetailPage({ params }) {
 
   return (
     
-    <div className="relative p-10 bg-black/90 min-h-screen">
-      <PackageHero title={pkg.name} img_url={pkg.img_url}>
+    <div className="flex p-10 bg-black/90 min-h-screen">
+      <PackageHero 
+      title={pkg.name} 
+      img_url={pkg.img_url}
+      >
     {isAdmin ? (
-      <div className="w-100">
+      <div className="">
       <EditPkgDescription
         initialDescription={pkg.description}
         packageId={pkg.id}
       />
       </div>
+
+
+
     ) : (
       <p className="text-white">{pkg.description}</p>
     )}
 
-<div className="">
-        <div className="p-7 gap-10 justify-center">
+
+        <div className="flex flex-col items-center">
             {...pkg.package_options?.map((option) => (
             <OptionDisplay key={option.id} option={option}/>
-        ))}
-      </div>
-  </div>
+          ))}
+        </div>
   </PackageHero>
 
   </div>

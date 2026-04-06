@@ -1,6 +1,6 @@
 export default function Footer () {
     return (
-        <div className="flex flex-col flex-wrap max-w-7xl justify-evenly bg-mauve-800">
+        <div className="flex flex-col flex-wrap max-w-7xl justify-evenly bg-black/90">
 
             <div className="flex flex-col items-left text-mauve-400 w-full p-20">
             <h6>Contact:</h6>

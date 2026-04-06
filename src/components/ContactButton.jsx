@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function ContactButton() {
     return (
-        <div className="w-20 h-30 fixed right-10">
+        <div className="fixed w-20 h-30 z-1">
 
             <Image 
             src="contactbutton.svg" 
