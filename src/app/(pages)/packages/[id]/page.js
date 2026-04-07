@@ -13,21 +13,20 @@ export default async function PackageDetailPage({ params }) {
   }
 
   return (
-    
-    <div className="flex p-10 bg-black/90 min-h-screen">
+    <div className="min-h-screen bg-black/90">
       <PackageHero 
       title={pkg.name} 
       img_url={pkg.img_url}
       >
     {isAdmin ? (
-      <div className="">
+      <div className="text-center px-5">
+        <div className="relative">
       <EditPkgDescription
         initialDescription={pkg.description}
         packageId={pkg.id}
       />
       </div>
-
-
+      </div>
 
     ) : (
       <p className="text-white">{pkg.description}</p>
