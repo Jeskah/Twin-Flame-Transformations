@@ -10,6 +10,10 @@
 }
 
 @theme {
+
+--font-calligraphy: 'Calligraphy', cursive;
+
+
   --animate-heartbeat: heartbeat 1.5s ease-in-out infinite;
   @keyframes heartbeat {
   10%   { transform: scale(1); }
@@ -39,6 +43,13 @@
       }
     }
   }
+}
+
+@font-face {
+  font-family: 'Calligraphy';
+  src: url('/fonts/Calligraphy.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {

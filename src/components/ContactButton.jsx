@@ -40,16 +40,16 @@ export default function ContactButton() {
         {isOpen && (
             <div className="fixed flex inset-0 bg-black/50 justify-center items-end p-20">
 
-                <div className="bg-mauve-300 flex flex-col gap-6 rounded-2xl p-6 w-full max-w-md relative">
+                <div className="bg-mauve-300 flex flex-col rounded-2xl p-6 w-full max-w-md relative">
 
-                <h5 className="text-right cursor-pointer" onClick={() => setIsOpen(false)}>
+                <h5 className="text-right px-2 hover:text-pink-700 cursor-pointer" onClick={() => setIsOpen(false)}>
                 ×
                 </h5>
 
                 <form className="flex gap-3 flex-col"
                 onSubmit={handleSubmit}>
 
-                <label htmlFor="email" className="text-sm">Email</label>
+                <label htmlFor="email" className="text-sm">Email:</label>
 
                     <input 
                     id="email" 
@@ -57,11 +57,12 @@ export default function ContactButton() {
                     name="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="enter your email"
+                    placeholder="youremail@transform.co.uk"
+                    className="border border-mauve-500/40 p-2 rounded-md text-sm resize-none focus:border-pink-500 focus:outline-2 focus:ring-0 focus:outline-none italic text-pink-800/40"
                     />
 
                     <label htmlFor="message" className="flex flex-col text-sm font-medium">
-                        Message
+                        Message:
                     </label>
                     
                     <textarea 
@@ -70,10 +71,12 @@ export default function ContactButton() {
                     placeholder="How can I help?"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    className="border h-50 rounded-md p-2 text-sm resize-none text-mauve-800"
+                    className="border border-mauve-500/40 h-50 rounded-md p-2 text-sm resize-none focus:border-pink-500 focus:outline-2 focus:ring-0 focus:outline-none italic text-pink-800/40"
                     />
 
-                    <button type="submit" className="bg-mauve-800 text-white rounded-md p-2 text-sm cursor-pointer">
+                    <p>opt in to our newsletter to stay connected</p>
+
+                    <button type="submit" className="bg-mauve-800 text-white rounded-md p-2 text-sm cursor-pointer hover:bg-pink-900">
                         Send
                     </button>
                 </form>

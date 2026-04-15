@@ -3,6 +3,7 @@ import Link from "next/link";
 import Hero from "../../public/hero.jpg";
 import Clouds from "../../public/clouds.jpg";
 import Heart from "../../public/heart-blur.png";
+import Wave from "../../public/wave.svg"
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
       </div>
 
       {/* Intro text */}
-      <div className="flex flex-col text-center items-center justify-center mt-10 gap-10 px-30 py-40 w-full mx-auto">
+      <div className="flex flex-col text-center items-center justify-center gap-10 px-20 py-40 w-full mx-auto">
         <h4 className="text-mauve-600">
           Transformational Spiritual Mentor & Intuitive Healing Guide
         </h4>
@@ -59,8 +60,8 @@ export default function Home() {
 
 
       {/* Heart image section */}
-      <div className="relative flex flex-col items-center px-6 py-80 gap-2 text-center">
-        <div className="flex-col flex justify-center items-center top-100">
+      <div className="relative flex flex-col items-center px-6 py-60 gap-2 text-center">
+        <div className="flex-col flex justify-center items-center pb-20 top-100">
         <Image
         src={Heart}
 
@@ -77,36 +78,49 @@ export default function Home() {
           inner alignment, sovereignty, and embodied authenticity.
         </p>
       </div>
+
+<Image
+src={Wave}
+alt=""
+cover
+className="object-cover absolute -z-3 bottom-0"
+/>
       </div>
 
-      <div className="flex flex-col items-center text-center gap-10 w-screen mx-auto justify-center pb-20 pt-10 bg-mauve-400">
+<div className="flex flex-col items-center text-center w-screen mx-auto justify-center bg-mauve-400">
 
-                <div className="flex flex-col gap-5 overflow-hidden px-30 text-mauve-800 justify-center text-center">
+  <div className="overflow-hidden text-mauve-800 justify-center items-center py-20">
 
-                          <h5 className="py-20 border-b-2">Connect deeply with your inner world and explore</h5>
+<span className="p-10 font-calligraphy! text-[70px] leading-12">Connect deeply with your inner world</span>
 
-<div className="text-mauve-400 pt-20 flex flex-col gap-10">
-          <div className="rounded-lg p-5 bg-mauve-800">
+<div className="text-mauve-400 px-20 flex flex-col gap-10">
+
+  <h5 className="text-mauve-800 pt-10">explore</h5>
+
+        <div className="rounded-lg p-5 bg-mauve-800">
           <p>emotional patterns</p>
           </div>
+
           <div className="rounded-lg p-5 bg-mauve-800">
           <p>unconscious wounds</p>
           </div>
+
           <div className="p-5 rounded-lg bg-mauve-800">
           <p>energetic misalignment</p>
           </div>
-          </div>
 
-                  <p className="py-20 text-center">
+        </div>
+
+                  <p className="p-20 text-center">
           This work is designed for those who are willing to engage deeply with
           their inner world, including emotional patterns, unconscious wounds,
           and energetic misalignment, with honesty and responsibility. It is
           best suited for those who are open to the understanding that energy is
           at the core of everything, and that meaningful healing often requires
           working at an energetic level.
-        </p>
+        </p>        
       </div>
-      </div>
+    </div>
 
 
 <div className="relative h-200 w-full">
@@ -117,26 +131,24 @@ export default function Home() {
     fill
     className="object-cover"
   />
+  
 
-  <div className="absolute inset-0 bg-black/40"></div>
+<div className="absolute inset-0 bg-black/40"></div>
 
-  <div className="absolute inset-0 flex flex-col items-center justify-around text-center text-white/80 gap-20 px-6">
+<div className="absolute inset-0 flex flex-col items-center justify-around text-center text-white/80 gap-20 px-6">
+
   <div className="relative top-30 flex gap-5 flex-col">
     <p>For those who are open to the understanding that</p>
-    <h3>energy is at the core of everything</h3>
-      <p className="px-30 text-mauve-300 flex flex-col justify-center items-center">
-        and that meaningful healing often requires working at an energetic
-        level
-      </p>
-      </div>
+    <h2 className="px-10">energy is at the core of everything</h2>
+    <p className="px-20 text-mauve-300 flex flex-col justify-center items-center">and that meaningful healing often requires working at an energetic level</p>
+  </div>
     
-      <p className="underline opacity-80 px-10">
-        May not be suitable if you are seeking quick fixes, predictions, or
-        frameworks that exclude energetic or intuitive perspectives
-      </p>
-      </div>
-
-      </div>
-    </div>
+    <p className="underline opacity-80 px-10">
+      May not be suitable if you are seeking quick fixes, predictions, or
+      frameworks that exclude energetic or intuitive perspectives
+    </p>
+  </div>
+</div>
+</div>
   );
 }
