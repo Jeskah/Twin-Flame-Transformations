@@ -46,35 +46,40 @@ export default function ContactButton() {
                 ×
                 </p>
 
-            <form className="flex gap-3 flex-col">
+                <form className="flex gap-3 flex-col"
+                onSubmit={handleSubmit}>
 
                 <label htmlFor="email" className="text-sm">Email</label>
 
-                <input 
-                id="email" 
-                type="email" 
-                name="email"
-                placeholder="enter your email"/>
+                    <input 
+                    id="email" 
+                    type="email" 
+                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="enter your email"
+                    />
 
-                <label htmlFor="message" className="flex flex-col text-sm font-medium">
-                    Message
-                </label>
-                
-                <textarea 
-                id="message"
-                name="message"
-                placeholder="How can I help?"
-                className="border h-50 rounded-md p-2 text-sm resize-none"
-                />
+                    <label htmlFor="message" className="flex flex-col text-sm font-medium">
+                        Message
+                    </label>
+                    
+                    <textarea 
+                    id="message"
+                    name="message"
+                    placeholder="How can I help?"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    className="border h-50 rounded-md p-2 text-sm resize-none"
+                    />
 
-<button type="submit" className="bg-black text-white rounded-md p-2 text-sm">
-    Send
-</button>
-            </form>
+                    <button type="submit" className="bg-black text-white rounded-md p-2 text-sm">
+                        Send
+                    </button>
+                </form>
             </div>
-            </div>
-        )}
         </div>
-
+        )}
+    </div>
     )
 }
