@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-const resend = new resend(process.env.RESEND_API_KEY)
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(req) {
     const { email, message } = await req.json()
@@ -10,7 +10,7 @@ export async function POST(req) {
         // to: 'shiatsuconnie@googlemail.com',
         to: 'jessica.antoinetteuk@gmail.com',
         subject: 'new inquirey',
-        hmtl:`<p>From: ${email}</p>
+        html:`<p>From: ${email}</p>
             <p>${message}</p>`
     })
 
