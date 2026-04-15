@@ -2,6 +2,7 @@ import { getPackageById } from "@/lib/db/packages";
 import PackageHero from "@/components/PackageHero";
 import OptionDisplay from "@/components/OptionDisplay";
 import EditPkgDescription from "@/components/EditPkgDescription";
+import CheckoutForm from "@/components/CheckoutForm";
 
 export default async function PackageDetailPage({ params }) {
   const { id } = await params;
@@ -39,7 +40,7 @@ export default async function PackageDetailPage({ params }) {
           ))}
         </div>
   </PackageHero>
-
-  </div>
+<CheckoutForm />
+</div>
   );
 }
