@@ -67,6 +67,9 @@ export default function ContactButton() {
                 className="border h-50 rounded-md p-2 text-sm resize-none"
                 />
 
+<button type="submit" className="bg-black text-white rounded-md p-2 text-sm">
+    Send
+</button>
             </form>
             </div>
             </div>
