@@ -24,7 +24,7 @@ export default function ContactButton() {
     return (
         <div>
             {!isOpen && (
-                <div className="fixed right-10 bottom-20">
+                <div className="fixed right-10 bottom-20 cursor-pointer">
                 <Image 
                     src="/contactbutton.png" 
                     alt="" 
@@ -42,9 +42,9 @@ export default function ContactButton() {
 
                 <div className="bg-mauve-300 flex flex-col gap-6 rounded-2xl p-6 w-full max-w-md relative">
 
-                <p className="text-right" onClick={() => setIsOpen(false)}>
+                <h5 className="text-right cursor-pointer" onClick={() => setIsOpen(false)}>
                 ×
-                </p>
+                </h5>
 
                 <form className="flex gap-3 flex-col"
                 onSubmit={handleSubmit}>
@@ -70,10 +70,10 @@ export default function ContactButton() {
                     placeholder="How can I help?"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    className="border h-50 rounded-md p-2 text-sm resize-none"
+                    className="border h-50 rounded-md p-2 text-sm resize-none text-mauve-800"
                     />
 
-                    <button type="submit" className="bg-black text-white rounded-md p-2 text-sm">
+                    <button type="submit" className="bg-mauve-800 text-white rounded-md p-2 text-sm cursor-pointer">
                         Send
                     </button>
                 </form>
