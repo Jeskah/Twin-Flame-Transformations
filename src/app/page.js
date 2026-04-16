@@ -12,7 +12,7 @@ export default function Home() {
       </div>
 
       {/* Hero */}
-      <div className="relative h-200 w-full">
+      <div className="relative h-screen w-full">
         <Image
           src={Hero}
           alt="Hero"
@@ -25,7 +25,7 @@ export default function Home() {
           <h1 className="font-bold max-w-2xl">twin flame transformations</h1>
           <p>A sacred container for radical change and integrative healing</p>
           <Link href="/packages">
-            <button className="border border-white px-8 py-4 mt-5 cursor-pointer hover:bg-white/10 transition">
+            <button className="border border-white px-8 py-4 mt-5 cursor-pointer hover:bg-white/10 transition text-xs">
               SEE PACKAGES
             </button>
           </Link>
@@ -89,9 +89,9 @@ className="object-cover absolute -z-3 bottom-0"
 
 <div className="flex flex-col items-center text-center w-screen mx-auto justify-center bg-mauve-400">
 
-  <div className="overflow-hidden text-mauve-800 justify-center items-center py-20">
+  <div className="overflow-hidden text-mauve-800 justify-center items-center py-20 px-5">
 
-<span className="p-10 font-calligraphy! text-[70px] leading-12">Connect deeply with your inner world</span>
+<span className="p-10 font-calligraphy! text-[46px] leading-12">Connect deeply with your inner world</span>
 
 <div className="text-mauve-400 px-20 flex flex-col gap-10">
 
