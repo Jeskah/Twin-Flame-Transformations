@@ -12,6 +12,7 @@ export default function AboutMe () {
       alt=""
       width={700}
       height={300}
+      priority
       className="flex bottom-10 p-4 rounded-3xl"
       />
 

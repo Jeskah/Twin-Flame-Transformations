@@ -11,9 +11,7 @@ export default function Home() {
       <div className="z-10 sticky">
       </div>
 
-      {/* Hero */}
-      <div className="relative h-screen w-full">
-        <Image
+              <Image
           src={Hero}
           alt="Hero"
           fill
@@ -21,6 +19,9 @@ export default function Home() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/40" />
+
+      {/* Hero */}
+      <div className="relative top-0 left-0 h-screen">
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white gap-4 px-6">
           <h1 className="font-bold max-w-2xl">twin flame transformations</h1>
           <p>A sacred container for radical change and integrative healing</p>

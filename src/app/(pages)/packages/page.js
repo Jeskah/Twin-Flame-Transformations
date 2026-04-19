@@ -30,7 +30,7 @@ Clicking on the titles below will take you to more detailed information</p>
       ))}
       </div>
 
-<div className="text-center flex flex-col gap-5 p-15">
+<div className="text-center flex flex-col mb-10 gap-5 p-15">
         <h5>Not sure where to begin?</h5>
         <p>If you feel drawn to this work but are unsure what would be most supportive, feel free to book a consultation. We can explore your current needs and decide on a structure that respects your energy, capacity, and intentions.
 There is no one-size-fits-all approach to healing. Whether you feel ready for deep container work or simply need a one-off session for clarity and energetic support, this space can meet you where you are.</p>

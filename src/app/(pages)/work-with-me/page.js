@@ -20,6 +20,7 @@ export default function WorkWithMe () {
         src={bg}
         alt=""
         fill
+        priority
         className="object-cover blur-md"
     />
 </div>

@@ -2,7 +2,7 @@
 
     export default function Navbar() {
     return (
-<div className="w-full px-5 bg-mauve-900/30 uppercase font-light text-gray-100 z-10 relative">
+<div className="w-full px-5 bg-mauve-900/10 uppercase font-light text-gray-100 z-10 relative">
     <nav className="flex justify-evenly text-[10px] p-6 gap-4 text-wrap overflow-hidden tracking-wide">
         <Link href="/">HOME</Link>
         <Link href="/about-me">ABOUT</Link>
