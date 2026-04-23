@@ -18,11 +18,15 @@ const { data: option } = await supabase
 if (!option) return <div>Option not found</div>;
 
 return (
-    <div className="min-h-screen bg-black/90 text-white text-center gap-1 px-10 flex flex-col items-center justify-center">
-    <h1 className="text-2xl mb-2">{option.title}</h1>
-    <p className="text-white/60 mb-8">Select a duration to continue</p>
 
-    <VariantCheckout variants={option.option_variants} />
+    <div className="min-h-screen top-0 left-0 relative w-full bg-black/90 text-white text-center gap-10 px-10 flex flex-col items-center py-20">
+        <p>You`ve selected:</p>
+    <h1 className="">{option.title}</h1>
+    <p>Select Duration</p>
+
+    <VariantCheckout variants={option.option_variants}/>
+
+
     </div>
 );
 }

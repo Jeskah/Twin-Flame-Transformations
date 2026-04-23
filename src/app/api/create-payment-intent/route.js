@@ -28,7 +28,7 @@ export async function POST(req) {
         metadata: {
             variant_id: variantId,
             price_id: variant.stripe_price_id,
-            constumer_email: customerEmail,
+            customer_email: customerEmail,
         }
     });
     return Response.json({ clientSecret: paymentIntent.client_secret})

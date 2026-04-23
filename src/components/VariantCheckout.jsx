@@ -9,22 +9,23 @@ const [selectedVariant, setSelectedVariant] = useState(null);
 if (selectedVariant) {
     return (
     <div className="flex flex-col items-center gap-4">
-        <button
-        onClick={() => setSelectedVariant(null)}
-        className="text-white/50 text-sm hover:text-white"
-        >
-        ← Back
-        </button>
         <CheckoutForm
         variantId={selectedVariant.id}
         price={selectedVariant.price}
         />
+
+        <button
+        onClick={() => setSelectedVariant(null)}
+        className="text-white/50 text-sm hover:text-white cursor-pointer mt-10"
+        >
+        <p>←</p> <p>Back</p>
+        </button>
     </div>
     );
 }
 
 return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 mt-1">
     {variants.map((variant) => (
         <button
         key={variant.id}

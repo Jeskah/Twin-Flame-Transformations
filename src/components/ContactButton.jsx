@@ -28,8 +28,8 @@ export default function ContactButton() {
                 <Image 
                     src="/contactbutton.png" 
                     alt="" 
-                    width={120} 
-                    height={120}
+                    width={60} 
+                    height={60}
                     className="items-center justify-center"
                     onClick={() => setIsOpen(true)}
                 />
@@ -38,9 +38,9 @@ export default function ContactButton() {
 
 
         {isOpen && (
-            <div className="fixed flex inset-0 bg-black/50 justify-center items-end p-20">
+            <div className="fixed flex inset-0 bg-black/50 justify-center items-end p-4">
 
-                <div className="bg-mauve-300 flex flex-col rounded-2xl p-6 w-full max-w-md relative">
+                <div className="bg-mauve-300/95 flex flex-col rounded-2xl p-5 w-full max-w-md relative h-120 bottom-50">
 
                 <h5 className="text-right px-2 hover:text-pink-700 cursor-pointer" onClick={() => setIsOpen(false)}>
                 ×

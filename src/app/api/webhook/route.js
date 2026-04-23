@@ -28,6 +28,13 @@ if (event.type === 'payment_intent.succeeded') {
     status: 'paid',
     });
 
+    await resend.emails.send({
+    from: 'onboarding@resend.dev',
+    to: customerEmail,
+    subject: 'Booking confirmed',
+    html: '<p>Thank you for booking! Connie will be in touch shortly.</p>'
+    })
+
     // Optionally call your own email service here (Resend, SendGrid, etc.)
 }
 

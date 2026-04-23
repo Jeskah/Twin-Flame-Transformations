@@ -7,7 +7,7 @@ import Wave from "../../public/wave.svg"
 
 export default function Home() {
   return (
-    <div className="overflow-x-hidden w-full">
+    <div className="overflow-x-hidden w-full min-h-screen">
       <div className="z-10 sticky">
       </div>
 
@@ -20,10 +20,9 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/40" />
 
-      {/* Hero */}
-      <div className="relative top-0 left-0 h-screen">
+      <div className="relative top-0 left-0 h-190">
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white gap-4 px-6">
-          <h1 className="font-bold max-w-2xl">twin flame transformations</h1>
+          <h1 className="font-bold max-w-2xl ">twin flame transformations</h1>
           <p>A sacred container for radical change and integrative healing</p>
           <Link href="/packages">
             <button className="border border-white px-8 py-4 mt-5 cursor-pointer hover:bg-white/10 transition text-xs">
@@ -34,7 +33,7 @@ export default function Home() {
       </div>
 
       {/* Intro text */}
-      <div className="flex flex-col text-center items-center justify-center gap-10 px-20 py-40 w-full mx-auto">
+      <div className="flex flex-col text-center items-center justify-center gap-10 px-20 py-70 w-full mx-auto">
         <h4 className="text-mauve-600">
           Transformational Spiritual Mentor & Intuitive Healing Guide
         </h4>
@@ -49,8 +48,8 @@ export default function Home() {
 
 
       {/* Quote block */}
-      <div className="px-16">
-        <div className="bg-mauve-400 flex flex-col justify-center items-center p-10 max-w-3xl mx-auto rounded-2xl">
+      <div className="px-15">
+        <div className="bg-mauve-400 flex flex-col justify-center items-center p-10 max-w-3xl mx-auto rounded-1xl">
           <p className="text-[#d7ccd5] text-center">
             This is a grounded, supportive space for people ready to dive into
             their healing, face their pain, alchemise their wounds, and step
@@ -61,8 +60,8 @@ export default function Home() {
 
 
       {/* Heart image section */}
-      <div className="relative flex flex-col items-center px-6 py-60 gap-2 text-center">
-        <div className="flex-col flex justify-center items-center pb-20 top-100">
+      <div className="relative flex flex-col items-center px-6 py-110 gap-2 text-center">
+        <div className="flex-col flex justify-center items-center">
         <Image
         src={Heart}
 
@@ -79,16 +78,16 @@ export default function Home() {
           inner alignment, sovereignty, and embodied authenticity.
         </p>
       </div>
-
-<Image
-src={Wave}
-alt=""
-cover
-className="object-cover absolute -z-3 bottom-0"
-/>
       </div>
 
 <div className="flex flex-col items-center text-center w-screen mx-auto justify-center bg-mauve-400">
+
+  {/* <Image
+src={Wave}
+alt=""
+cover
+className="object-cover absolute -z-3 top-100 w-full"
+/> */}
 
   <div className="overflow-hidden text-mauve-800 justify-center items-center py-20 px-5">
 
@@ -124,7 +123,7 @@ className="object-cover absolute -z-3 bottom-0"
     </div>
 
 
-<div className="relative h-200 w-full">
+<div className="relative h-screen w-full">
 
   <Image
     src={Clouds}
@@ -136,7 +135,7 @@ className="object-cover absolute -z-3 bottom-0"
 
 <div className="absolute inset-0 bg-black/40"></div>
 
-<div className="absolute inset-0 flex flex-col items-center justify-around text-center text-white/80 gap-20 px-6">
+<div className="min-h-screen absolute inset-0 flex flex-col items-center justify-around text-center text-white/80 gap-20 px-6">
 
   <div className="relative top-30 flex gap-5 flex-col">
     <p>For those who are open to the understanding that</p>

@@ -14,7 +14,7 @@ export default async function PackageDetailPage({ params }) {
   }
 
   return (
-    <div className="min-h-screen bg-black/90">
+    <div className="min-h-screen bg-black/90 top-0 left-0">
       <PackageHero 
       title={pkg.name} 
       img_url={pkg.img_url}
@@ -40,7 +40,7 @@ export default async function PackageDetailPage({ params }) {
           ))}
         </div>
   </PackageHero>
-<CheckoutForm />
+{/* <CheckoutForm /> */}
 </div>
   );
 }
