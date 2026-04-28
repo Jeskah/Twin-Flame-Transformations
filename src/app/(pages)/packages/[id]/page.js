@@ -7,20 +7,21 @@ import CheckoutForm from "@/components/CheckoutForm";
 export default async function PackageDetailPage({ params }) {
   const { id } = await params;
   const pkg = await getPackageById(id);
-  const isAdmin = true
+  const isAdmin = true;
 
     if (!pkg) {
     return <div className="p-6">Package not found</div>;
   }
 
   return (
-    <div className="min-h-screen bg-black/90 top-0 left-0">
+<div className="relative min-h-screen w-full -mt-20">
       <PackageHero 
       title={pkg.name} 
       img_url={pkg.img_url}
+      
       >
     {isAdmin ? (
-      <div className="text-center px-5">
+      <div className="text-center px-15">
         <div className="relative">
       <EditPkgDescription
         initialDescription={pkg.description}

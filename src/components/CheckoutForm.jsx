@@ -59,7 +59,7 @@ return (
 );
 }
 
-// Outer wrapper — fetches the clientSecret then mounts Elements
+
 export default function CheckoutForm({ variantId, customerEmail }) {
 
 const router = useRouter()
@@ -78,7 +78,8 @@ const initPayment = async () => {
 };
 
 if (!clientSecret) {
-    return <button onClick={initPayment} className='cursor-pointer border rounded-md p-5 mt-10 text-sm hover:bg-mauve-800'>Confirm & Checkout</button>;
+    return <button onClick={initPayment} className='cursor-pointer border rounded-md p-5 mt-10 text-sm hover:bg-mauve-800'>
+Confirm & Checkout</button>;
 }
 
 const options = {

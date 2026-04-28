@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Footer () {
     return (
-        <div className="flex flex-col flex-wrap w-screen justify-evenly bg-black/70 px-10 py-15">
+        <div className="flex flex-col flex-wrap w-screen z-50 justify-evenly bg-black/70 px-10 py-15">
 
             <div className="overflow-hidden text-wrap items-left text-mauve-400 w-full">
             {/* <p>Get Social:</p> */}
@@ -30,10 +30,10 @@ export default function Footer () {
     </Link>
 </div>
 
-
+{/* 
             <p>Twin Flame Transformations 2026</p>
 
-            <p className="text-mauve-600">created by Vatick 2026</p>
+            <p className="text-mauve-600">created by Vatick 2026</p> */}
             </div>
 
         </div>

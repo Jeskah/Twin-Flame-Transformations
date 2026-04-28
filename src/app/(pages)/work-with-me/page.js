@@ -73,11 +73,13 @@ return (
         <button className="p-3 text-center flex rounded-md hover:bg-mauve-300/10 text-xs bg-mauve-500/20 cursor-pointer" onClick={() => setOpen('energetic')}>- read more -</button>
     </div>
 
-    <div className="flex flex-col gap-5 p-10 text-center align-middle items-center justify-center rounded-xl border-2 border-mauve-700/50 h-100">
+        <div className="flex flex-col gap-10 p-10 text-center align-middle items-center justify-center rounded-xl border-2 border-mauve-700/50 h-100">
         <h5>Emotion Code Sessions</h5>
-        <p>Emotion Code work focuses on identifying and releasing trapped emotions using the Emotion Code method, guided through dowsing and intuitive insight.</p>
-        <button className="p-3 text-center flex rounded-md hover:bg-mauve-300/10 text-xs bg-mauve-500/20 cursor-pointer" onClick={() => setOpen('emotion')}>- read more -</button>
+        <p>Emotion Code work focuses on identifying and releasing trapped emotions using the Emotion Code method, guided through dowsing and intuitive insight.
+This approach is trauma-aware and gently paced. It can support emotional regulation, lightness, and release of long-held emotional patterns..</p>
+        <button className="p-3 text-center flex rounded-md hover:bg-mauve-300/10 text-xs bg-mauve-500/20 cursor-pointer" onClick={() => setOpen('energetic')}>- read more -</button>
     </div>
+
 
     </div>
 
@@ -109,8 +111,8 @@ return (
 
     {/* Modal */}
     {open && (
-    <div className="fixed flex inset-0 bg-black/50 justify-center items-end z-50" onClick={() => setOpen(null)}>
-        <div className="bg-mauve-300 flex flex-col rounded-2xl p-6 w-full max-w-md h-130 bottom-50 relative" onClick={(e) => e.stopPropagation()}>
+    <div className="fixed flex inset-0 bg-black/50 justify-center items-end z-50 px-10" onClick={() => setOpen(null)}>
+        <div className="bg-mauve-300/95 flex flex-col rounded-2xl p-6 w-full max-w-md h-130 bottom-50 relative" onClick={(e) => e.stopPropagation()}>
         <h5 className="text-right px-2 hover:text-pink-700 cursor-pointer" onClick={() => setOpen(null)}>×</h5>
         <h5 className="mb-10">{modalContent[open]?.title}</h5>
         <p className="text-sm whitespace-pre-line">{modalContent[open]?.content}</p>

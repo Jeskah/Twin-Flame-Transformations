@@ -25,13 +25,13 @@ const handleSave = async () => {
 if (!editing) {
     return (
     <div className='flex flex-col items-center justify-center w-full'>
-        <p className="text-white whitespace-pre-line text-xs">{description}</p>
-        <button
+        <p className="text-white whitespace-pre-line">{description}</p>
+        {/* <button
         className="p-1 mt-10 bg-white text-black text-xs"
         onClick={() => setEditing(true)}
         >
         Edit Description
-        </button>
+        </button> */}
     </div>
     )
 }
