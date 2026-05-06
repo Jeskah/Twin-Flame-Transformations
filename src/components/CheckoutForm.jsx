@@ -56,6 +56,8 @@ return (
         {loading ? 'Processing...' : 'Pay now'}
     </button>
     </form>
+
+    
 );
 }
 
@@ -79,7 +81,7 @@ const initPayment = async () => {
 
 if (!clientSecret) {
     return <button onClick={initPayment} className='cursor-pointer border rounded-md p-5 mt-10 text-sm hover:bg-mauve-800'>
-Confirm & Checkout</button>;
+Continue to Checkout</button>;
 }
 
 const options = {
@@ -107,6 +109,8 @@ const options = {
 };
 
 return (
+
+    
     <Elements stripe={stripePromise} options={options}>
     <PaymentForm onSuccess={() => router.push('/checkout/success')} />
     </Elements>

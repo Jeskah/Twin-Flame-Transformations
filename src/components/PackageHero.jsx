@@ -5,6 +5,7 @@ export default function PackageHero({ title, img_url, children }) {
     <div className="relative w-full text-white">
       <div className="absolute inset-0 -mb-40">
         <Image
+          priority
           src={img_url}
           alt={title}
           fill

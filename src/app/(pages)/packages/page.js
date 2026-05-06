@@ -13,13 +13,14 @@ export default async function PackagesPage() {
     
     <div className="relative min-h-screen ">
 
-      <Image 
+      <Image
+      priority
       src={Hero}
       alt=""
-      className="object-cover -z-10 blur-[17px] opacity-80 top-0 fixed overflow-hidden scale-110 h-full"
+      className="object-cover -z-10 blur-sm opacity-80 top-0 fixed overflow-hidden scale-110 h-full"
       />
 
-      <div className="gap-10 py-20 justify-center flex flex-col">
+      <div className="gap-10 py-10 justify-center flex flex-col">
         <h5 className="text-center">Available bookings</h5>
 
         {/* <h1>Booking & Enquiries</h1> */}
@@ -30,7 +31,7 @@ Clicking on the titles below will take you to more detailed information</p>
 
 
 
-      <div className="flex flex-row flex-wrap w-screen items-center gap-15 justify-evenly px-7 py-20 ">
+      <div className="flex flex-row flex-wrap w-screen items-center gap-15 justify-evenly px-7 py-10 ">
       {packages.map((pkg) => (
         <Link key={pkg.id} href={`/packages/${pkg.id}`}>
           <PackageCard

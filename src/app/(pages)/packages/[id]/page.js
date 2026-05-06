@@ -18,10 +18,11 @@ export default async function PackageDetailPage({ params }) {
       <PackageHero 
       title={pkg.name} 
       img_url={pkg.img_url}
-      
+      priority
       >
+
     {isAdmin ? (
-      <div className="text-center px-15">
+      <div className="text-center px-8 py-10">
         <div className="relative">
       <EditPkgDescription
         initialDescription={pkg.description}

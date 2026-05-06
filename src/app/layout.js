@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
 import ContactButton from "@/components/ContactButton";
+import BackButton from '../components/BackButton'
 
 
 export default function RootLayout({ children }) {
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
         <main className="grow">
         {children}
         </main>
+        <BackButton />
         <Footer/>
         <ContactButton />
       </body>

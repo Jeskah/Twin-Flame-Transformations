@@ -12,10 +12,10 @@ export default function Home() {
       </div>
 
               <Image
+          priority
           src={Hero}
           alt="Hero"
           fill
-          priority
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/40" />
@@ -33,7 +33,7 @@ export default function Home() {
       </div>
 
       {/* Intro text */}
-      <div className="flex flex-col text-center items-center justify-center gap-10 px-20 py-70 w-full mx-auto">
+      <div className="flex flex-col text-center items-center justify-center gap-10 px-20 py-50 w-full mx-auto">
         <h4 className="text-mauve-600">
           Transformational Spiritual Mentor & Intuitive Healing Guide
         </h4>
@@ -44,12 +44,10 @@ export default function Home() {
           strengthening, channelling, integrative coaching, and, where
           appropriate health based intuitive guidance.
         </p>
-      </div>
 
-
-      {/* Quote block */}
+              {/* Quote block */}
       <div className="px-15">
-        <div className="bg-mauve-400 flex flex-col justify-center items-center p-10 max-w-3xl mx-auto rounded-1xl">
+        <div className="bg-mauve-400 flex flex-col justify-center items-center p-10 max-w-3xl mx-auto rounded-1xl w-80">
           <p className="text-[#d7ccd5] text-center">
             This is a grounded, supportive space for people ready to dive into
             their healing, face their pain, alchemise their wounds, and step
@@ -57,10 +55,12 @@ export default function Home() {
           </p>
         </div>
       </div>
+      </div>
+
 
 
       {/* Heart image section */}
-      <div className="relative flex flex-col items-center px-6 py-110 gap-2 text-center">
+      <div className="relative flex flex-col items-center px-6 py-11 gap-2 text-center">
         <div className="flex-col flex justify-center items-center">
         <Image
         src={Heart}
@@ -148,6 +148,7 @@ className="object-cover absolute -z-3 top-100 w-full"
       frameworks that exclude energetic or intuitive perspectives
     </p>
   </div>
+  
 </div>
 </div>
   );

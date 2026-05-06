@@ -16,10 +16,10 @@ export async function POST(req) {
     .eq('id', variantId)
     .single();
 
-  if (error || !variant) {
+if (error || !variant) {
     console.error('Supabase error:', error);
     return Response.json({ error: 'Variant not found' }, { status: 404 });
-  }
+}
 
     const paymentIntent = await stripe.paymentIntents.create({
         amount: variant.price * 100,
@@ -32,4 +32,5 @@ export async function POST(req) {
         }
     });
     return Response.json({ clientSecret: paymentIntent.client_secret})
+
 };
