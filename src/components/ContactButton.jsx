@@ -24,7 +24,7 @@ export default function ContactButton() {
     return (
         <div>
             {!isOpen && (
-                <div className="fixed right-2 bottom-20 cursor-pointer z-50">
+                <div className="fixed right-3 bottom-3 cursor-pointer z-50">
                 <Image 
                     src="/contactbutton.png" 
                     alt="" 

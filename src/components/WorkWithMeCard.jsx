@@ -12,7 +12,7 @@ export default function WorkWithMeCard({ id, name, description }) {
         <h5>{name}</h5>
         <p className="text-sm line-clamp-3">{description}</p>
         <button
-          className="p-3 text-center flex rounded-md hover:bg-mauve-300/10 text-xs bg-mauve-500/20 cursor-pointer"
+          className="p-3 text-center flex rounded-md hover:bg-mauve-300/10 text-xs bg-mauve-500/20 cursor-pointer z-100"
           onClick={() => setOpen(true)}
         >
           - read more -
@@ -25,10 +25,12 @@ export default function WorkWithMeCard({ id, name, description }) {
           onClick={() => setOpen(false)}
         >
           <div
-            className="bg-mauve-300/95 flex flex-col rounded-2xl p-6 w-90 max-w-md mb-10 gap-6 pb-15 fixed top-20 align-center "
+            className="bg-mauve-300/95 flex flex-col rounded-2xl p-10 w-90 max-w-md pb-15 fixed top-50 gap-10 justify-center"
             onClick={(e) => e.stopPropagation()}
           >
-            <h5 className="text-right cursor-pointer hover:text-pink-700" onClick={() => setOpen(false)}>×</h5>
+            <h5 className="text-right cursor-pointer hover:text-pink-700" onClick={() => setOpen(false)}>
+          ×
+            </h5>
             <h5>{name}</h5>
             <p className="text-sm pb-5 whitespace-pre-line">{description}</p>
             <Link href={`/packages/${id}`} onClick={() => setOpen(false)}>

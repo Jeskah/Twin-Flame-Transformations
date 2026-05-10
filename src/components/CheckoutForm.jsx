@@ -109,10 +109,10 @@ const options = {
 };
 
 return (
-
-    
     <Elements stripe={stripePromise} options={options}>
+
     <PaymentForm onSuccess={() => router.push('/checkout/success')} />
+
     </Elements>
 );
 }

@@ -18,6 +18,7 @@ export default async function WorkWithMe() {
         <h5>WORK WITH ME</h5>
         <div className="px-10 gap-10 flex flex-col">
           <p>I aim to support you on the journey back to your true self, helping you heal core wounds, integrate fragmented parts, clear and strengthen your energy system, and move toward greater inner alignment and sovereignty.</p>
+          
           <p>There are a number of ways to engage with this work, depending on where you are on your path and what kind of support you are seeking. All work is offered within a grounded, ethical, and trauma-aware container, with a strong emphasis on self-responsibility, integration, and inner union.</p>
         </div>
       </div>

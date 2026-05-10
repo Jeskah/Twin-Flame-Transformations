@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import PackageHero from './PackageHero';
 import CheckoutForm from './CheckoutForm';
 
 export default function VariantCheckout({ variants }) {
@@ -9,6 +10,7 @@ const [selectedVariant, setSelectedVariant] = useState(null);
 if (selectedVariant) {
     return (
     <div className="flex flex-col items-center gap-4">
+    
         <CheckoutForm
         variantId={selectedVariant.id}
         price={selectedVariant.price}
@@ -37,6 +39,14 @@ return (
         <span className="mt-2 text-sm border border-white/30 rounded-full px-4 py-1">Select</span>
         </button>
     ))}
+
+            <button
+        onClick={() => setSelectedVariant(null)}
+        className="text-white/50 text-sm hover:text-white cursor-pointer mt-10"
+        >
+        <p>←</p> <p>Back</p>
+        </button>
+    
     </div>
 );
 }

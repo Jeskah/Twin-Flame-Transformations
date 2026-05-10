@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Footer () {
     return (
-        <div className="flex flex-col flex-wrap z-50 justify-evenly bg-black/40 fixed bottom-20 rounded-r-md">
+        <div className="flex flex-col flex-wrap justify-evenly bg-white/10 left-3 fixed bottom-3 rounded-md">
 
             <div className="overflow-hidden text-wrap items-center text-mauve-400">
             {/* <p>Get Social:</p> */}

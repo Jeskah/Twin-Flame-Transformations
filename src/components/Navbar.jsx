@@ -7,8 +7,8 @@ export default function Navbar() {
 const [navOpen, setNavOpen] = useState(false);
 
 return (
-    <div className="w-full px-5 uppercase text-black-100 z-50 top-0 sticky">
-    <nav className="flex justify-between items-center text-2xl p-6 gap-4 tracking-wide">
+    <div className="w-full px-10 py-7 uppercase text-black-100 z-50 top-0 sticky">
+    <nav className="flex justify-between items-center text-2xl tracking-wide">
         
         <Link href="/" className="z-30 relative">꩜</Link>
 

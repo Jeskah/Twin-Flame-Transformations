@@ -20,7 +20,7 @@ export default async function PackagesPage() {
       className="object-cover -z-10 blur-sm opacity-80 top-0 fixed overflow-hidden scale-110 h-full"
       />
 
-      <div className="gap-10 py-10 justify-center flex flex-col">
+      <div className="gap-10 py-15 justify-center flex flex-col">
         <h5 className="text-center">Available bookings</h5>
 
         {/* <h1>Booking & Enquiries</h1> */}

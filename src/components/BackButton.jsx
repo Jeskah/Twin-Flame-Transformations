@@ -1,17 +1,30 @@
 'use client'
 
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 const BackButton = () => {
     const router = useRouter();
+    const pathname = usePathname();
+    const isHomePage = pathname === '/';
+    const isPackagePage = pathname.startsWith('/packages/');
+
+    const handleBack = () => {
+        if (isPackagePage) {
+            router.push('/packages/')
+        }
+        else {
+            router.back()
+        }
+    }
+
 
     return (
-        <button 
-        onClick={() => router.back()}
-        className="w-50 py-5 items-center justify-center border-3 text-white z-50 cursor-pointer">
-            ← Back
-        </button>
-
+        <>
+            {!isHomePage && (
+                <button onClick={handleBack}
+                className="w-20 items-center cursor-pointer fixed top-36 text-2xl">←</button>
+            )}
+            </>
     )
 }
 

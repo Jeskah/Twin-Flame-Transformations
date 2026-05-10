@@ -11,7 +11,7 @@ export default function Home() {
       <div className="z-10 sticky">
       </div>
 
-              <Image
+          <Image
           priority
           src={Hero}
           alt="Hero"

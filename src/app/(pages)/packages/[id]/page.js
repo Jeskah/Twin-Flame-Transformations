@@ -13,16 +13,21 @@ export default async function PackageDetailPage({ params }) {
     return <div className="p-6">Package not found</div>;
   }
 
+  
+
   return (
-<div className="relative min-h-screen w-full -mt-20">
+
+    
+<div className="relative min-h-screen w-full -mt-22">
       <PackageHero 
       title={pkg.name} 
       img_url={pkg.img_url}
       priority
+      
       >
 
     {isAdmin ? (
-      <div className="text-center px-8 py-10">
+      <div className="text-center px-10 py-10">
         <div className="relative">
       <EditPkgDescription
         initialDescription={pkg.description}
@@ -38,7 +43,7 @@ export default async function PackageDetailPage({ params }) {
 
         <div className="flex flex-col items-center">
             {...pkg.package_options?.map((option) => (
-            <OptionDisplay key={option.id} option={option}/>
+            <OptionDisplay key={option.id} option={option} img_url={pkg.img_url}/>
           ))}
         </div>
   </PackageHero>
