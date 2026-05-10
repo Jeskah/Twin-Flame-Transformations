@@ -41,7 +41,6 @@ return (
     <h1 className="px-10">{option.title}</h1>
     <VariantCheckout variants={option.option_variants}/>
 
-    
 
     
 </div>

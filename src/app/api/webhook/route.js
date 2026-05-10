@@ -11,6 +11,10 @@ export async function POST(req) {
 const body = await req.text();
 const sig = req.headers.get('stripe-signature');
 
+    const { variantId, customerEmail } = await req.json();
+    console.log('variantId received:', variantId);
+    console.log('customerEmail received:', customerEmail);
+
 let event;
 try {
     event = stripe.webhooks.constructEvent(body, sig, process.env.STRIPE_WEBHOOK_SECRET);

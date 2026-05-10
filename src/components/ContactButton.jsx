@@ -1,13 +1,19 @@
 'use client'
 
 import Image from "next/image"
-import { useState } from "react"
+import { useState, useEffect } from "react";
 
-export default function ContactButton() {
+export default function ContactButton({ initialOpen = false }) {
 
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(initialOpen)
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+
+    useEffect(() => {
+    const handler = () => setIsOpen(true);
+    window.addEventListener('open-contact', handler);
+    return () => window.removeEventListener('open-contact', handler);
+}, []);
 
     async function handleSubmit(e) {
         e.preventDefault()
@@ -40,9 +46,9 @@ export default function ContactButton() {
         {isOpen && (
             <div className="fixed flex inset-0 bg-black/50 justify-center items-end p-4 z-50">
 
-                <div className="bg-mauve-300/95 flex flex-col rounded-2xl p-5 w-85 max-w-md relative h-120 bottom-50">
+                <div className="bg-mauve-300/95 flex flex-col rounded-2xl p-5 w-85 max-w-md relative h-120 bottom-50 text-left text-black/50">
 
-                <h5 className="text-right px-2 hover:text-pink-700 cursor-pointer" onClick={() => setIsOpen(false)}>
+            <h5 className="text-right px-2 hover:text-pink-700 cursor-pointer" onClick={() => setIsOpen(false)}>
                 ×
                 </h5>
 
@@ -62,7 +68,7 @@ export default function ContactButton() {
                     />
 
                     <label htmlFor="message" className="flex flex-col text-sm font-medium">
-                        Message:
+                        Enquire:
                     </label>
                     
                     <textarea 

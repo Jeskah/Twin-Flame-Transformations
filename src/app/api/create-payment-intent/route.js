@@ -21,8 +21,13 @@ if (error || !variant) {
     return Response.json({ error: 'Variant not found' }, { status: 404 });
 }
 
+    console.log('variant from supabase:', variant);
+    console.log('price raw:', variant?.price);
+    console.log('amount calculated:', Math.round(parseFloat(variant?.price) * 100));
+
+    
     const paymentIntent = await stripe.paymentIntents.create({
-        amount: variant.price * 100,
+        amount: Math.round(parseFloat(variant.price) * 100),
         currency: 'gbp',
         receipt_email: customerEmail,
         metadata: {

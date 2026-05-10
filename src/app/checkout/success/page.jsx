@@ -2,9 +2,9 @@
 export default function SuccessPage() {
     return (
 
-        <div className="min-h-screen flex flex-col items-center justify-center text-center gap-6 text-mauve-500 p-10">
+        <div className="max-h-screen flex flex-col items-center justify-center text-center gap-6 text-mauve-500 px-25 py-50">
 
-        <div className="absolute -z-10 top-77">
+        <div className="absolute -z-10 top-55">
             <video width={170} height={170} autoPlay loop muted playsInline>
             <source src="/Confetti.webm" type="video/webm" />
             </video>

@@ -2,6 +2,9 @@ import { getPackageById } from "@/lib/db/packages";
 import PackageHero from "@/components/PackageHero";
 import OptionDisplay from "@/components/OptionDisplay";
 import EditPkgDescription from "@/components/EditPkgDescription";
+import BackToPackages from "@/components/BackToPackages";
+
+
 import CheckoutForm from "@/components/CheckoutForm";
 
 export default async function PackageDetailPage({ params }) {
@@ -46,6 +49,7 @@ export default async function PackageDetailPage({ params }) {
             <OptionDisplay key={option.id} option={option} img_url={pkg.img_url}/>
           ))}
         </div>
+        <BackToPackages/>
   </PackageHero>
 {/* <CheckoutForm /> */}
 </div>

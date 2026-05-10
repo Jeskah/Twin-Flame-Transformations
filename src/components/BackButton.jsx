@@ -7,6 +7,7 @@ const BackButton = () => {
     const pathname = usePathname();
     const isHomePage = pathname === '/';
     const isPackagePage = pathname.startsWith('/packages/');
+    const isCheckoutPage = pathname.startsWith('/checkout/')
 
     const handleBack = () => {
         if (isPackagePage) {
@@ -20,7 +21,7 @@ const BackButton = () => {
 
     return (
         <>
-            {!isHomePage && (
+            {!isHomePage && !isPackagePage && !isCheckoutPage && (
                 <button onClick={handleBack}
                 className="w-20 items-center cursor-pointer fixed top-36 text-2xl">←</button>
             )}
